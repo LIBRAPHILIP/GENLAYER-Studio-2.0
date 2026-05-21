@@ -1,0 +1,35 @@
+# This file instructs the Google Cloud SDK what directories and files should
+# be excluded from being uploaded to Google Cloud during deploy operations.
+
+# Ignore git metadata
+.git/
+.gitignore
+
+# Ignore node package dependencies (Cloud Build installs them dynamically in the cloud)
+node_modules/
+
+# Ignore local build artifacts
+dist/
+dist-server/
+build/
+
+# Ignore env files containing secrets
+.env
+.env.local
+.env.production.local
+.env.development.local
+.env.test.local
+
+# Ignore logs and diagnostics
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+
+# Ignore OS system files
+.DS_Store
+Thumbs.db
+
+# Ignore gcloud metadata
+.gcloudignore
