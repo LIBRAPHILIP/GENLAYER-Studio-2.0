@@ -8,6 +8,10 @@ interface SimulationResult {
   status: 'success' | 'failure';
   timestamp: string;
   logs: string[];
+  type?: 'simulation' | 'deployment';
+  txHash?: string;
+  gasUsed?: string;
+  contractAddress?: string;
 }
 
 interface GenLayerContextType {
